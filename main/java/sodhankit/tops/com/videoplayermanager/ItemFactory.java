@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class ItemFactory {
 
-    public static BaseVideoItem createItemFromAsset(String assetName, int imageResource, Activity activity, VideoPlayerManager<MetaData> videoPlayerManager, String url) throws IOException {
-        return new AssetVideoItem(assetName, activity.getAssets().openFd(assetName), videoPlayerManager, Picasso.with(activity), imageResource, url);
+    public static BaseVideoItem createItemFromAsset(String title, int imageResource, Activity activity, VideoPlayerManager<MetaData> videoPlayerManager, String url) throws IOException {
+        return new AssetVideoItem(title,  videoPlayerManager, Picasso.with(activity), imageResource, url);
     }
 }

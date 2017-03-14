@@ -13,19 +13,19 @@ public class AssetVideoItem extends BaseVideoItem{
     private static final String TAG = AssetVideoItem.class.getSimpleName();
     private static final boolean SHOW_LOGS = Config.SHOW_LOGS;
 
-    private final AssetFileDescriptor mAssetFileDescriptor;
+    //private final AssetFileDescriptor mAssetFileDescriptor;
     private final String mTitle;
 
     private final Picasso mImageLoader;
     private final int mImageResource;
     private String url;
 
-    public AssetVideoItem(String title, AssetFileDescriptor assetFileDescriptor,
+    public AssetVideoItem(String title,
                           VideoPlayerManager<MetaData> videoPlayerManager,
                           Picasso imageLoader, int imageResource, String url) {
         super(videoPlayerManager);
         mTitle = title;
-        mAssetFileDescriptor = assetFileDescriptor;
+        //mAssetFileDescriptor = assetFileDescriptor;
         mImageLoader = imageLoader;
         mImageResource = imageResource;
         this.url=url;
